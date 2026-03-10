@@ -16,7 +16,7 @@ def listar_productos(request):
         print(productos_cursor)
 
     return render(request, "listar_productos.html", {
-        "productos": productos_cursor
+        "productos": productos
     })
 
 

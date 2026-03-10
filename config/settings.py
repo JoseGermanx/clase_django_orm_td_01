@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store'
+    'store',
+    'clientes'
 ]
 
 MIDDLEWARE = [
@@ -74,14 +75,22 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
+     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'store',
-        'USER': 'root',
+        'USER': 'postgres',
         'PASSWORD': 'm15126376*',
-        'HOST': 'localhost', # https://mysql.kjhasjkfhsdf.jikahsjdk.google.gpc.com (ejemplo url en live)
-        'PORT': '3306'
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'store',
+    #     'USER': 'root',
+    #     'PASSWORD': 'm15126376*',
+    #     'HOST': 'localhost', # https://mysql.kjhasjkfhsdf.jikahsjdk.google.gpc.com (ejemplo url en live)
+    #     'PORT': '3306'
+    # }
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
