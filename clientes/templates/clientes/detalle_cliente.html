@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle cliente: {{cliente.nombre}}</title>
+</head>
+<body>
+    <h1>Detalles del cliente</h1>
+    <p><strong>Nombre: </strong>{{cliente.nombre}}</p>
+    <p><strong>Email: </strong>{{cliente.email}}</p>
+    <p><strong>Teléfono: </strong>{{cliente.telefono}}</p>
+    <p><strong>Estatus: </strong>
+        {% if cliente.activo %}
+        Activo
+        {% else %}
+        Inactivo
+        {% endif %}
+    </p>
+    <p><strong>Tipo: </strong>{{cliente.tipo}}</p>
+    
+</body>
+</html>
