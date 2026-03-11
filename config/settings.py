@@ -87,7 +87,7 @@ DATABASES = {
     #     'ENGINE': 'django.db.backends.mysql',
     #     'NAME': 'store',
     #     'USER': 'root',
-    #     'PASSWORD': 'm15126376*',
+    #     'PASSWORD': '',
     #     'HOST': 'localhost', # https://mysql.kjhasjkfhsdf.jikahsjdk.google.gpc.com (ejemplo url en live)
     #     'PORT': '3306'
     # }
